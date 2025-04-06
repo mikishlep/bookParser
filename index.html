@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Парсер книг</title>
+  <script defer src="renderer.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <h2>IT-PRO Парсер книг Litres</h2>
+    <div>
+        <label for="urlInput">URL книги:</label><br>
+        <input type="text" id="urlInput" placeholder="https://example.com/book">
+    </div>
+    <div>
+        <label for="browserPathInput">Путь к браузеру:</label><br>
+        <input type="text" id="browserPathInput" placeholder="C:\Program Files\Google\Chrome\Application\chrome.exe">
+    </div>
+    <div>
+        <label for="folderPathInput">Папка для сохранения PDF:</label><br>
+        <input type="text" id="folderPathInput" readonly placeholder="Выберите папку">
+        <div class="btn-group" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+            <button id="chooseFolderButton">Выбрать папку</button>
+            <button id="startButton">Начать парсинг</button>
+        </div>
+    </div>
+    <p id="status"></p>
+  </div>
+</body>
+</html>

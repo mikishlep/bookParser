@@ -1,0 +1,25 @@
+{
+  "name": "electron-book-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . electron-book-parser --platform=win32 --arch=x64 --out=release-builds --overwrite --ignore=node_modules/puppeteer/.local-chromium --ignore=chrome-data"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^35.1.2",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "pdfkit": "^0.16.0",
+    "puppeteer-core": "^24.4.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron-packager": "^17.1.0"
+  }
+}
